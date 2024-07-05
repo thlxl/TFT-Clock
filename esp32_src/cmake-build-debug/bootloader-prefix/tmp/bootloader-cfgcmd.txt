@@ -1,0 +1,1 @@
+cmd='/home/xl/文档/CLion-2023.2.2/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake;-DSDKCONFIG=/home/xl/esp/01_huizhong/sdkconfig;-DIDF_PATH=/home/xl/esp/esp-idf;-DIDF_TARGET=esp32;-DPYTHON_DEPS_CHECKED=1;-DPYTHON=python;-DEXTRA_COMPONENT_DIRS=/home/xl/esp/esp-idf/components/bootloader;-DPROJECT_SOURCE_DIR=/home/xl/esp/01_huizhong;-GNinja;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'

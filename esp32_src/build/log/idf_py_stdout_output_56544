@@ -1,0 +1,380 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15576
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 13 2024 17:45:22[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=a5d00h (679168) map[0m
+[0;32mI (352) esp_image: segment 1: paddr=000b5d28 vaddr=3ffb0000 size=0398ch ( 14732) load[0m
+[0;32mI (358) esp_image: segment 2: paddr=000b96bc vaddr=40080000 size=0695ch ( 26972) load[0m
+[0;32mI (369) esp_image: segment 3: paddr=000c0020 vaddr=400d0020 size=a2884h (665732) map[0m
+[0;32mI (610) esp_image: segment 4: paddr=001628ac vaddr=4008695c size=10518h ( 66840) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (649) boot: Disabling RNG early entropy source...[0m
+[0;32mI (661) cpu_start: Multicore app[0m
+[0;32mI (661) cpu_start: Pro cpu up.[0m
+[0;32mI (661) cpu_start: Starting app cpu, entry point is 0x40081440[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (679) cpu_start: Pro cpu start user code[0m
+[0;32mI (679) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (679) cpu_start: Application information:[0m
+[0;32mI (684) cpu_start: Project name:     ShiZhong[0m
+[0;32mI (689) cpu_start: App version:      b7784e2-dirty[0m
+[0;32mI (694) cpu_start: Compile time:     Jun 13 2024 17:56:55[0m
+[0;32mI (700) cpu_start: ELF file SHA256:  eb390a71d2f9ad5e...[0m
+[0;32mI (706) cpu_start: ESP-IDF:          v5.1-dirty[0m
+[0;32mI (712) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (716) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (721) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (726) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (733) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (739) heap_init: At 3FFB8130 len 00027ED0 (159 KiB): DRAM[0m
+[0;32mI (745) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (752) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (758) heap_init: At 40096E74 len 0000918C (36 KiB): IRAM[0m
+[0;32mI (766) spi_flash: detected chip: generic[0m
+[0;32mI (769) spi_flash: flash io: dio[0m
+[0;33mW (773) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (787) app_start: Starting scheduler on CPU0[0m
+[0;32mI (791) app_start: Starting scheduler on CPU1[0m
+[0;32mI (791) main_task: Started on CPU0[0m
+[0;32mI (801) main_task: Calling app_main()[0m
+[0;32mI (801) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (811) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (821) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (831) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (851) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (861) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (871) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (881) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (891) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3861) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3861) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3891) example_connect: Start example_connect.[0m
+I (3901) wifi:wifi driver task: 3ffbffd4, prio:23, stack:6656, core=0
+I (3901) wifi:wifi firmware version: b2f1f86
+I (3901) wifi:wifi certification version: v7.0
+I (3901) wifi:config NVS flash: enabled
+I (3901) wifi:config nano formating: disabled
+I (3911) wifi:Init data frame dynamic rx buffer num: 32
+I (3911) wifi:Init management frame dynamic rx buffer num: 32
+I (3921) wifi:Init management short buffer num: 32
+I (3921) wifi:Init dynamic tx buffer num: 32
+I (3931) wifi:Init static rx buffer size: 1600
+I (3931) wifi:Init static rx buffer num: 10
+I (3941) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3941) wifi_init: rx ba win: 6[0m
+[0;32mI (3941) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3951) wifi_init: udp mbox: 6[0m
+[0;32mI (3951) wifi_init: tcp mbox: 6[0m
+[0;32mI (3961) wifi_init: tcp tx win: 5744[0m
+[0;32mI (3961) wifi_init: tcp rx win: 5744[0m
+[0;32mI (3961) wifi_init: tcp mss: 1440[0m
+[0;32mI (3971) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3971) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3981) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (4091) wifi:mode : sta (a0:a3:b3:95:56:e0)
+I (4091) wifi:enable tsf
+[0;32mI (4091) example_connect: Connecting to TP-LINK_13A1...[0m
+[0;32mI (4091) example_connect: Waiting for IP(s)[0m
+[0;32mI (4091) example_common: Connected to example_netif_sta[0m
+[0;32mI (4101) example_common: - IPv4 address: 0.0.0.0,[0m
+[0;33mW (4111) mqtt5_client: Connect maximum_packet_size property is over buffer_size(1024), Please first change it[0m
+[0;32mI (4121) MQTT5_EXAMPLE: Other event id:7[0m
+[0;31mE (4121) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4131) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4131) mqtt_client: Error transport connect[0m
+[0;32mI (4141) MQTT5_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (4141) MQTT5_EXAMPLE: MQTT5 return code is 0[0m
+[0;31mE (4151) MQTT5_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (4151) MQTT5_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (4161) MQTT5_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4221) sntp_example: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (4221) sntp_example: Initializing and starting SNTP[0m
+[0;32mI (4221) sntp_example: List of configured NTP servers:[0m
+[0;32mI (4231) sntp_example: server 0: pool.ntp.org[0m
+[0;32mI (4231) sntp_example: server 1: time.nist.gov[0m
+[0;32mI (4241) sntp_example: server 2: europe.pool.ntp.org[0m
+[0;32mI (4251) sntp_example: server 3: 0.0.0.0[0m
+[0;33mW (4311) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (4311) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (4821) main_task: Returned from app_main()[0m
+rgb24bit:0
+[0;33mW (5581) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (5581) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+[0;32mI (6251) sntp_example: Waiting for system time to be set... (1/15)[0m
+rgb24bit:0
+I (6511) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+rgb24bit:0
+I (7291) wifi:state: init -> auth (b0)
+I (7301) wifi:state: auth -> assoc (0)
+I (7311) wifi:state: assoc -> run (10)
+rgb24bit:0
+I (7321) wifi:connected with TP-LINK_13A1, aid = 4, channel 11, 40D, bssid = ec:60:73:04:13:a1
+I (7321) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (7321) wifi:pm start, type: 1
+
+[0;33mW (7361) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (7361) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+I (7401) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (7411) wifi:<ba-add>idx:0 (ifx:0, ec:60:73:04:13:a1), tid:0, ssn:0, winSize:64
+rgb24bit:0
+[0;32mI (8251) sntp_example: Waiting for system time to be set... (2/15)[0m
+rgb24bit:0
+[0;33mW (8621) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (8621) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+rgb24bit:0
+[0;32mI (9331) esp_netif_handlers: example_netif_sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (9331) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.110[0m
+rgb24bit:0
+[0;33mW (9881) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (9881) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (10251) sntp_example: Waiting for system time to be set... (3/15)[0m
+rgb24bit:0
+rgb24bit:0
+[0;33mW (11141) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (11141) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+rgb24bit:0
+[0;32mI (12251) sntp_example: Waiting for system time to be set... (4/15)[0m
+rgb24bit:0
+[0;33mW (12401) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (12401) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+rgb24bit:0
+[0;33mW (13671) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (13671) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+[0;32mI (14171) MQTT5_EXAMPLE: Other event id:7[0m
+[0;32mI (14251) sntp_example: Waiting for system time to be set... (5/15)[0m
+[0;32mI (14291) MQTT5_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14291) MQTT5_EXAMPLE: sent publish successful, msg_id=25599[0m
+[0;32mI (14301) MQTT5_EXAMPLE: sent subscribe successful, msg_id=63385[0m
+[0;32mI (14301) MQTT5_EXAMPLE: sent subscribe successful, msg_id=11678[0m
+rgb24bit:0
+[0;32mI (14331) mqtt5_client: MQTT_MSG_TYPE_PUBACK return code is 0[0m
+[0;32mI (14331) MQTT5_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=25599[0m
+[0;32mI (14341) mqtt5_client: MQTT_MSG_TYPE_SUBACK return code is 1[0m
+[0;32mI (14341) MQTT5_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=63385[0m
+[0;32mI (14351) mqtt5_client: MQTT_MSG_TYPE_SUBACK return code is 1[0m
+[0;32mI (14351) MQTT5_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=11678[0m
+[0;32mI (14361) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (14361) MQTT5_EXAMPLE: key is board, value is esp32[0m
+[0;32mI (14371) MQTT5_EXAMPLE: key is u, value is user[0m
+[0;32mI (14371) MQTT5_EXAMPLE: key is p, value is password[0m
+[0;32mI (14381) MQTT5_EXAMPLE: payload_format_indicator is 1[0m
+[0;32mI (14381) MQTT5_EXAMPLE: response_topic is /topic/test/response[0m
+[0;32mI (14391) MQTT5_EXAMPLE: correlation_data is 123456[0m
+[0;32mI (14401) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (14401) MQTT5_EXAMPLE: TOPIC=/time/style[0m
+[0;32mI (14411) MQTT5_EXAMPLE: DATA=image1[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (16251) sntp_example: Waiting for system time to be set... (6/15)[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (18251) sntp_example: Waiting for system time to be set... (7/15)[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (20251) sntp_example: Waiting for system time to be set... (8/15)[0m
+rgb24bit:0
+rgb24bit:0
+[0;32mI (20911) sntp_example: Notification of a time synchronization event[0m
+[0;32mI (20911) sntp_example: The current date/time in Shanghai is: Thu Jul  4 18:57:18 2024[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (35171) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (35171) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (35171) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (35181) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (35181) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (35191) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (35191) MQTT5_EXAMPLE: DATA=16766208[0m
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+[0;32mI (39341) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (39341) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (39341) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (39351) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (39351) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (39361) MQTT5_EXAMPLE: TOPIC=/time/style[0m
+[0;32mI (39361) MQTT5_EXAMPLE: DATA=switch[0m
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+rgb24bit:ffd500
+[0;32mI (41531) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (41531) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (41531) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (41531) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (41541) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (41541) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (41551) MQTT5_EXAMPLE: DATA=16776960[0m
+rgb24bit:ffff00
+rgb24bit:ffff00
+rgb24bit:ffff00
+rgb24bit:ffff00
+[0;32mI (43331) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (43341) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (43341) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (43341) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (43341) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (43351) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (43351) MQTT5_EXAMPLE: DATA=14024448[0m
+rgb24bit:d5ff00
+rgb24bit:d5ff00
+[0;32mI (44671) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44671) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44671) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44681) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44681) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44681) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44691) MQTT5_EXAMPLE: DATA=11206400[0m
+rgb24bit:aaff00
+rgb24bit:aaff00
+rgb24bit:aaff00
+[0;32mI (46011) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (46011) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (46011) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (46011) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (46021) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (46021) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (46031) MQTT5_EXAMPLE: DATA=8453888[0m
+rgb24bit:509f600
+rgb24bit:509f600
+[0;32mI (47121) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (47121) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (47131) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (47131) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (47131) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (47141) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (47141) MQTT5_EXAMPLE: DATA=5635840[0m
+rgb24bit:35bf600
+[0;32mI (47641) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (47641) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (47641) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (47641) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (47651) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (47651) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (47651) MQTT5_EXAMPLE: DATA=2817792[0m
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+[0;32mI (50421) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (50431) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (50431) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (50431) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (50431) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (50441) MQTT5_EXAMPLE: TOPIC=/time/style[0m
+[0;32mI (50441) MQTT5_EXAMPLE: DATA=switch[0m
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600
+rgb24bit:1adf600

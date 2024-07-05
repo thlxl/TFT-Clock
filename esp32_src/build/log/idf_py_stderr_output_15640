@@ -1,0 +1,8 @@
+[0;33m--- esp-idf-monitor 1.3.3 on /dev/ttyUSB1 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008136c: pthread_mutex_lock_internal at /home/xl/esp/esp-idf/components/pthread/pthread.c:604
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 7b1ae14fd0e4443b7326db2300e5a3daa1e68b05755075a9e992321ccecdc931[0m
+[0m

@@ -1,0 +1,402 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15576
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 13 2024 17:45:22[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=66df8h (421368) map[0m
+[0;32mI (259) esp_image: segment 1: paddr=00076e20 vaddr=3ffb0000 size=0390ch ( 14604) load[0m
+[0;32mI (265) esp_image: segment 2: paddr=0007a734 vaddr=40080000 size=058e4h ( 22756) load[0m
+[0;32mI (274) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=a14c0h (660672) map[0m
+[0;32mI (513) esp_image: segment 4: paddr=001214e8 vaddr=400858e4 size=11590h ( 71056) load[0m
+[0;32mI (554) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (554) boot: Disabling RNG early entropy source...[0m
+[0;32mI (566) cpu_start: Multicore app[0m
+[0;32mI (566) cpu_start: Pro cpu up.[0m
+[0;32mI (566) cpu_start: Starting app cpu, entry point is 0x40081440[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (584) cpu_start: Pro cpu start user code[0m
+[0;32mI (584) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (584) cpu_start: Application information:[0m
+[0;32mI (589) cpu_start: Project name:     ShiZhong[0m
+[0;32mI (594) cpu_start: App version:      b7784e2-dirty[0m
+[0;32mI (599) cpu_start: Compile time:     Jun 13 2024 17:56:55[0m
+[0;32mI (605) cpu_start: ELF file SHA256:  582c384867d249b0...[0m
+[0;32mI (611) cpu_start: ESP-IDF:          v5.1-dirty[0m
+[0;32mI (617) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (621) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (626) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (631) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (638) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (644) heap_init: At 3FFB80A0 len 00027F60 (159 KiB): DRAM[0m
+[0;32mI (650) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (657) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (663) heap_init: At 40096E74 len 0000918C (36 KiB): IRAM[0m
+[0;32mI (671) spi_flash: detected chip: generic[0m
+[0;32mI (674) spi_flash: flash io: dio[0m
+[0;33mW (678) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (692) app_start: Starting scheduler on CPU0[0m
+[0;32mI (696) app_start: Starting scheduler on CPU1[0m
+[0;32mI (696) main_task: Started on CPU0[0m
+[0;32mI (706) main_task: Calling app_main()[0m
+[0;32mI (706) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (716) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (726) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (736) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (756) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (766) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (776) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (786) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (796) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3766) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3766) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3796) example_connect: Start example_connect.[0m
+I (3806) wifi:wifi driver task: 3ffbff44, prio:23, stack:6656, core=0
+I (3806) wifi:wifi firmware version: b2f1f86
+I (3806) wifi:wifi certification version: v7.0
+I (3806) wifi:config NVS flash: enabled
+I (3806) wifi:config nano formating: disabled
+I (3816) wifi:Init data frame dynamic rx buffer num: 32
+I (3816) wifi:Init management frame dynamic rx buffer num: 32
+I (3826) wifi:Init management short buffer num: 32
+I (3826) wifi:Init dynamic tx buffer num: 32
+I (3836) wifi:Init static rx buffer size: 1600
+I (3836) wifi:Init static rx buffer num: 10
+I (3846) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3846) wifi_init: rx ba win: 6[0m
+[0;32mI (3846) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3856) wifi_init: udp mbox: 6[0m
+[0;32mI (3856) wifi_init: tcp mbox: 6[0m
+[0;32mI (3856) wifi_init: tcp tx win: 5744[0m
+[0;32mI (3866) wifi_init: tcp rx win: 5744[0m
+[0;32mI (3866) wifi_init: tcp mss: 1440[0m
+[0;32mI (3876) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3876) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3886) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (3996) wifi:mode : sta (a0:a3:b3:95:56:e0)
+I (3996) wifi:enable tsf
+[0;32mI (3996) example_connect: Connecting to TP-LINK_13A1...[0m
+[0;32mI (4006) example_connect: Waiting for IP(s)[0m
+[0;32mI (4006) example_common: Connected to example_netif_sta[0m
+[0;32mI (4006) example_common: - IPv4 address: 0.0.0.0,[0m
+[0;32mI (4016) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (4016) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4026) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4026) mqtt_client: Error transport connect[0m
+[0;32mI (4036) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (4036) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (4046) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (4056) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4606) sntp_example: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (4606) sntp_example: Initializing and starting SNTP[0m
+[0;32mI (4616) sntp_example: List of configured NTP servers:[0m
+[0;32mI (4616) sntp_example: server 0: pool.ntp.org[0m
+[0;32mI (4626) sntp_example: server 1: time.nist.gov[0m
+[0;32mI (4626) sntp_example: server 2: europe.pool.ntp.org[0m
+[0;32mI (4636) sntp_example: server 3: 0.0.0.0[0m
+温度:290.642405   湿度:318.944076
+温度:290.775921   湿度:318.791485
+温度:290.482185   湿度:318.760967
+温度:290.482185   湿度:319.111925
+I (6416) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1
+[0;32mI (6636) sntp_example: Waiting for system time to be set... (1/15)[0m
+I (7206) wifi:state: init -> auth (b0)
+[0;32mI (7206) main_task: Returned from app_main()[0m
+I (7206) wifi:state: auth -> assoc (0)
+I (7216) wifi:state: assoc -> run (10)
+I (7246) wifi:connected with TP-LINK_13A1, aid = 4, channel 6, 40D, bssid = ec:60:73:04:13:a1
+I (7246) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (7246) wifi:pm start, type: 1
+
+温度:290.642405   湿度:318.944076
+I (7346) wifi:<ba-add>idx:0 (ifx:0, ec:60:73:04:13:a1), tid:0, ssn:0, winSize:64
+I (7436) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+温度:290.215152   湿度:318.745708
+[0;32mI (8256) esp_netif_handlers: example_netif_sta ip: 192.168.1.113, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8256) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.113[0m
+温度:290.081636   湿度:318.577859
+[0;32mI (8636) sntp_example: Waiting for system time to be set... (2/15)[0m
+温度:290.348669   湿度:318.287938
+温度:290.348669   湿度:318.440528
+温度:290.215152   湿度:318.440528
+温度:290.348669   湿度:317.967498
+[0;32mI (10636) sntp_example: Waiting for system time to be set... (3/15)[0m
+温度:290.482185   湿度:318.471046
+温度:290.642405   湿度:318.623636
+温度:290.348669   湿度:318.440528
+[0;32mI (12636) sntp_example: Waiting for system time to be set... (4/15)[0m
+温度:290.348669   湿度:317.509728
+温度:290.081636   湿度:317.784390
+温度:290.348669   湿度:317.799649
+温度:290.642405   湿度:318.303197
+[0;32mI (14636) sntp_example: Waiting for system time to be set... (5/15)[0m
+温度:290.215152   湿度:318.928817
+温度:290.081636   湿度:317.936980
+温度:290.215152   湿度:317.936980
+[0;32mI (16636) sntp_example: Waiting for system time to be set... (6/15)[0m
+温度:290.081636   湿度:317.616541
+温度:290.348669   湿度:317.799649
+温度:290.348669   湿度:318.150607
+温度:290.081636   湿度:318.120089
+[0;32mI (18636) sntp_example: Waiting for system time to be set... (7/15)[0m
+温度:290.215152   湿度:318.120089
+温度:290.482185   湿度:317.967498
+温度:290.215152   湿度:317.647059
+[0;32mI (20636) sntp_example: Waiting for system time to be set... (8/15)[0m
+温度:290.215152   湿度:317.799649
+温度:290.348669   湿度:317.799649
+温度:290.215152   湿度:317.647059
+温度:290.348669   湿度:318.440528
+[0;32mI (22636) sntp_example: Waiting for system time to be set... (9/15)[0m
+温度:290.482185   湿度:318.303197
+温度:290.215152   湿度:318.287938
+[0;32mI (24036) sntp_example: Notification of a time synchronization event[0m
+hour:3
+[0;32mI (24036) sntp_example: The current date/time in Shanghai is: Fri Jun 14 11:04:19 2024[0m
+温度:290.215152   湿度:317.936980
+温度:290.081636   湿度:318.745708
+温度:290.081636   湿度:319.066148
+温度:290.081636   湿度:318.120089
+温度:289.921416   湿度:318.257420
+温度:290.215152   湿度:318.577859
+温度:290.482185   湿度:318.303197
+温度:290.642405   湿度:318.944076
+温度:290.775921   湿度:319.127184
+温度:290.642405   湿度:318.944076
+温度:290.482185   湿度:318.471046
+温度:290.642405   湿度:318.791485
+温度:290.775921   湿度:318.623636
+温度:290.482185   湿度:317.967498
+温度:290.348669   湿度:318.150607
+温度:290.482185   湿度:318.303197
+温度:290.775921   湿度:318.165866
+温度:290.909438   湿度:318.196384
+温度:290.775921   湿度:318.165866
+温度:290.642405   湿度:317.662318
+温度:290.482185   湿度:317.662318
+温度:290.482185   湿度:317.967498
+温度:290.348669   湿度:317.799649
+温度:290.482185   湿度:318.303197
+温度:290.348669   湿度:317.158770
+温度:290.482185   湿度:317.341878
+温度:290.642405   湿度:317.372396
+温度:291.470207   湿度:325.383383
+温度:291.603723   湿度:347.081712
+温度:291.176471   湿度:355.138476
+温度:291.336690   湿度:354.268711
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15576
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 13 2024 17:45:22[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=66df8h (421368) map[0m
+[0;32mI (259) esp_image: segment 1: paddr=00076e20 vaddr=3ffb0000 size=0390ch ( 14604) load[0m
+[0;32mI (265) esp_image: segment 2: paddr=0007a734 vaddr=40080000 size=058e4h ( 22756) load[0m
+[0;32mI (274) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=a14c0h (660672) map[0m
+[0;32mI (513) esp_image: segment 4: paddr=001214e8 vaddr=400858e4 size=11590h ( 71056) load[0m
+[0;32mI (554) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (554) boot: Disabling RNG early entropy source...[0m
+[0;32mI (566) cpu_start: Multicore app[0m
+[0;32mI (566) cpu_start: Pro cpu up.[0m
+[0;32mI (566) cpu_start: Starting app cpu, entry point is 0x40081440[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (584) cpu_start: Pro cpu start user code[0m
+[0;32mI (584) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (584) cpu_start: Application information:[0m
+[0;32mI (589) cpu_start: Project name:     ShiZhong[0m
+[0;32mI (594) cpu_start: App version:      b7784e2-dirty[0m
+[0;32mI (599) cpu_start: Compile time:     Jun 13 2024 17:56:55[0m
+[0;32mI (605) cpu_start: ELF file SHA256:  582c384867d249b0...[0m
+[0;32mI (611) cpu_start: ESP-IDF:          v5.1-dirty[0m
+[0;32mI (617) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (621) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (626) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (631) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (638) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (644) heap_init: At 3FFB80A0 len 00027F60 (159 KiB): DRAM[0m
+[0;32mI (650) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (657) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (663) heap_init: At 40096E74 len 0000918C (36 KiB): IRAM[0m
+[0;32mI (671) spi_flash: detected chip: generic[0m
+[0;32mI (674) spi_flash: flash io: dio[0m
+[0;33mW (678) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (692) app_start: Starting scheduler on CPU0[0m
+[0;32mI (696) app_start: Starting scheduler on CPU1[0m
+[0;32mI (696) main_task: Started on CPU0[0m
+[0;32mI (706) main_task: Calling app_main()[0m
+[0;32mI (706) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (716) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (726) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (736) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (756) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (766) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (776) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (786) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (796) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3766) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3766) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3796) example_connect: Start example_connect.[0m
+I (3806) wifi:wifi driver task: 3ffbff44, prio:23, stack:6656, core=0
+I (3806) wifi:wifi firmware version: b2f1f86
+I (3806) wifi:wifi certification version: v7.0
+I (3806) wifi:config NVS flash: enabled
+I (3806) wifi:config nano formating: disabled
+I (3816) wifi:Init data frame dynamic rx buffer num: 32
+I (3816) wifi:Init management frame dynamic rx buffer num: 32
+I (3826) wifi:Init management short buffer num: 32
+I (3826) wifi:Init dynamic tx buffer num: 32
+I (3836) wifi:Init static rx buffer size: 1600
+I (3836) wifi:Init static rx buffer num: 10
+I (3846) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3846) wifi_init: rx ba win: 6[0m
+[0;32mI (3846) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3856) wifi_init: udp mbox: 6[0m
+[0;32mI (3856) wifi_init: tcp mbox: 6[0m
+[0;32mI (3856) wifi_init: tcp tx win: 5744[0m
+[0;32mI (3866) wifi_init: tcp rx win: 5744[0m
+[0;32mI (3866) wifi_init: tcp mss: 1440[0m
+[0;32mI (3876) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3876) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3886) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (3996) wifi:mode : sta (a0:a3:b3:95:56:e0)
+I (3996) wifi:enable tsf
+[0;32mI (3996) example_connect: Connecting to TP-LINK_13A1...[0m
+[0;32mI (3996) example_connect: Waiting for IP(s)[0m
+[0;32mI (4006) example_common: Connected to example_netif_sta[0m
+[0;32mI (4006) example_common: - IPv4 address: 0.0.0.0,[0m
+[0;32mI (4016) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (4016) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4026) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4026) mqtt_client: Error transport connect[0m
+[0;32mI (4036) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (4036) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (4046) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (4046) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4636) sntp_example: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (4636) sntp_example: Initializing and starting SNTP[0m
+[0;32mI (4646) sntp_example: List of configured NTP servers:[0m
+[0;32mI (4646) sntp_example: server 0: pool.ntp.org[0m
+[0;32mI (4656) sntp_example: server 1: time.nist.gov[0m
+[0;32mI (4656) sntp_example: server 2: europe.pool.ntp.org[0m
+[0;32mI (4666) sntp_example: server 3: 0.0.0.0[0m
+温度:292.725261   湿度:380.575265
+[0;32mI (4726) main_task: Returned from app_main()[0m
+温度:292.992294   湿度:377.218280
+温度:292.858778   湿度:371.480888
+温度:292.992294   湿度:363.988708
+I (6416) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1
+[0;32mI (6666) sntp_example: Waiting for system time to be set... (1/15)[0m
+I (7196) wifi:state: init -> auth (b0)
+I (7206) wifi:state: auth -> assoc (0)
+I (7236) wifi:state: assoc -> run (10)
+I (7266) wifi:connected with TP-LINK_13A1, aid = 4, channel 6, 40D, bssid = ec:60:73:04:13:a1
+I (7266) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (7266) wifi:pm start, type: 1
+
+温度:292.992294   湿度:353.124285
+I (7316) wifi:<ba-add>idx:0 (ifx:0, ec:60:73:04:13:a1), tid:0, ssn:0, winSize:64
+I (7326) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+温度:292.992294   湿度:346.913863
+[0;32mI (8276) esp_netif_handlers: example_netif_sta ip: 192.168.1.113, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8276) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.113[0m
+温度:292.858778   湿度:341.466392
+[0;32mI (8666) sntp_example: Waiting for system time to be set... (2/15)[0m
+温度:292.725261   湿度:337.880522
+温度:292.591745   湿度:337.560082
+温度:292.725261   湿度:339.024949
+温度:292.458228   湿度:339.620050
+[0;32mI (10666) sntp_example: Waiting for system time to be set... (3/15)[0m
+温度:292.591745   湿度:339.299611
+温度:292.591745   湿度:339.162280
+温度:292.725261   湿度:339.024949
+[0;32mI (12666) sntp_example: Waiting for system time to be set... (4/15)[0m
+温度:292.591745   湿度:337.560082
+温度:292.591745   湿度:336.781872
+温度:292.725261   湿度:335.973144
+温度:292.858778   湿度:334.233616
+[0;32mI (14666) sntp_example: Waiting for system time to be set... (5/15)[0m
+温度:292.591745   湿度:331.349660
+温度:292.458228   湿度:330.067903
+温度:292.458228   湿度:327.351797
+[0;32mI (16666) sntp_example: Waiting for system time to be set... (6/15)[0m
+温度:292.725261   湿度:325.978485
+温度:292.591745   湿度:324.025330
+温度:292.298009   湿度:323.369192
+温度:292.458228   湿度:322.133211
+[0;32mI (18666) sntp_example: Waiting for system time to be set... (7/15)[0m
+温度:292.458228   湿度:321.004044
+温度:292.458228   湿度:320.363165
+温度:292.591745   湿度:319.722286
+[0;32mI (20666) sntp_example: Waiting for system time to be set... (8/15)[0m
+温度:292.591745   湿度:319.127184
+温度:292.591745   湿度:318.944076
+温度:292.591745   湿度:318.944076
+温度:292.591745   湿度:318.333715
+[0;32mI (22666) sntp_example: Waiting for system time to be set... (9/15)[0m
+[0;32mI (22686) sntp_example: Notification of a time synchronization event[0m
+hour:3
+[0;32mI (22696) sntp_example: The current date/time in Shanghai is: Fri Jun 14 11:04:59 2024[0m
+温度:292.591745   湿度:317.845426
+温度:292.725261   湿度:316.914626
+温度:292.725261   湿度:317.051957
+温度:292.992294   湿度:316.929885
+温度:292.725261   湿度:316.914626
+温度:292.858778   湿度:316.594186
+温度:292.458228   湿度:316.243229
+温度:292.725261   湿度:315.922789
+温度:292.458228   湿度:316.243229
+温度:292.298009   湿度:316.380560
+温度:292.458228   湿度:315.907530
+温度:292.591745   湿度:316.563668
+温度:292.458228   湿度:316.548409
+温度:292.458228   湿度:317.189288
+温度:292.591745   湿度:317.982757
+温度:292.992294   湿度:318.806744
+温度:292.858778   湿度:318.974594

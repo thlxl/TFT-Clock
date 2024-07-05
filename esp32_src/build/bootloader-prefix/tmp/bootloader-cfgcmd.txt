@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DSDKCONFIG=/home/xl/esp/01_huizhong/sdkconfig;-DIDF_PATH=/home/xl/esp/esp-idf;-DIDF_TARGET=esp32;-DPYTHON_DEPS_CHECKED=1;-DPYTHON=/home/xl/.espressif/python_env/idf5.1_py3.10_env/bin/python;-DEXTRA_COMPONENT_DIRS=/home/xl/esp/esp-idf/components/bootloader;-DPROJECT_SOURCE_DIR=/home/xl/esp/01_huizhong;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

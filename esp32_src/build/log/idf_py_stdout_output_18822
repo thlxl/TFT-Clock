@@ -1,0 +1,118 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15576
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 24 2024 16:25:38[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26a90h (158352) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036ab8 vaddr=3ffb0000 size=03788h ( 14216) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a248 vaddr=40080000 size=05dd0h ( 24016) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9a5bch (632252) map[0m
+[0;32mI (408) esp_image: segment 4: paddr=000da5e4 vaddr=40085dd0 size=0f744h ( 63300) load[0m
+[0;32mI (445) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (446) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu up.[0m
+[0;32mI (458) cpu_start: Starting app cpu, entry point is 0x4008136c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (475) cpu_start: Pro cpu start user code[0m
+[0;32mI (475) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (475) cpu_start: Application information:[0m
+[0;32mI (480) cpu_start: Project name:     sntp[0m
+[0;32mI (485) cpu_start: App version:      1[0m
+[0;32mI (489) cpu_start: Compile time:     Jun 14 2024 11:24:30[0m
+[0;32mI (495) cpu_start: ELF file SHA256:  a52ef4e13047ef81...[0m
+[0;32mI (501) cpu_start: ESP-IDF:          v5.1-dirty[0m
+[0;32mI (507) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (511) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (516) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (521) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (528) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFB7E20 len 000281E0 (160 KiB): DRAM[0m
+[0;32mI (540) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (547) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (553) heap_init: At 40095514 len 0000AAEC (42 KiB): IRAM[0m
+[0;32mI (561) spi_flash: detected chip: generic[0m
+[0;32mI (564) spi_flash: flash io: dio[0m
+[0;33mW (568) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (582) app_start: Starting scheduler on CPU0[0m
+[0;32mI (586) app_start: Starting scheduler on CPU1[0m
+[0;32mI (586) main_task: Started on CPU0[0m
+[0;32mI (596) main_task: Calling app_main()[0m
+[0;32mI (596) MQTT5_EXAMPLE: [APP] Startup..[0m
+[0;32mI (596) MQTT5_EXAMPLE: [APP] Free memory: 279344 bytes[0m
+[0;32mI (606) MQTT5_EXAMPLE: [APP] IDF version: v5.1-dirty[0m
+[0;32mI (626) example_connect: Start example_connect.[0m
+I (646) wifi:wifi driver task: 3ffbf978, prio:23, stack:6656, core=0
+I (646) wifi:wifi firmware version: b2f1f86
+I (646) wifi:wifi certification version: v7.0
+I (646) wifi:config NVS flash: enabled
+I (646) wifi:config nano formating: disabled
+I (656) wifi:Init data frame dynamic rx buffer num: 32
+I (656) wifi:Init management frame dynamic rx buffer num: 32
+I (666) wifi:Init management short buffer num: 32
+I (666) wifi:Init dynamic tx buffer num: 32
+I (666) wifi:Init static rx buffer size: 1600
+I (676) wifi:Init static rx buffer num: 10
+I (676) wifi:Init dynamic rx buffer num: 32
+[0;32mI (686) wifi_init: rx ba win: 6[0m
+[0;32mI (686) wifi_init: tcpip mbox: 32[0m
+[0;32mI (686) wifi_init: udp mbox: 6[0m
+[0;32mI (696) wifi_init: tcp mbox: 6[0m
+[0;32mI (696) wifi_init: tcp tx win: 5744[0m
+[0;32mI (706) wifi_init: tcp rx win: 5744[0m
+[0;32mI (706) wifi_init: tcp mss: 1440[0m
+[0;32mI (706) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (716) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (716) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (826) wifi:mode : sta (e4:65:b8:21:19:58)
+I (826) wifi:enable tsf
+[0;32mI (826) example_connect: Connecting to TP-LINK_13A1...[0m
+[0;32mI (836) example_connect: Waiting for IP(s)[0m
+I (3246) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1
+I (3956) wifi:state: init -> auth (b0)
+I (3966) wifi:state: auth -> assoc (0)
+I (3966) wifi:state: assoc -> run (10)
+I (3986) wifi:connected with TP-LINK_13A1, aid = 5, channel 6, 40D, bssid = ec:60:73:04:13:a1
+I (3986) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (3986) wifi:pm start, type: 1
+
+I (4026) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4066) wifi:<ba-add>idx:0 (ifx:0, ec:60:73:04:13:a1), tid:0, ssn:0, winSize:64
+[0;32mI (4996) esp_netif_handlers: example_netif_sta ip: 192.168.1.107, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4996) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.107[0m
+[0;32mI (5626) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:e665:b8ff:fe21:1958, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5626) example_common: Connected to example_netif_sta[0m
+[0;32mI (5636) example_common: - IPv4 address: 192.168.1.107,[0m
+[0;32mI (5636) example_common: - IPv6 address: fe80:0000:0000:0000:e665:b8ff:fe21:1958, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5656) MQTT5_EXAMPLE: Other event id:7[0m
+[0;32mI (5656) main_task: Returned from app_main()[0m
+[0;32mI (5756) MQTT5_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5756) MQTT5_EXAMPLE: sent publish successful, msg_id=24446[0m
+[0;32mI (5766) MQTT5_EXAMPLE: sent subscribe successful, msg_id=36804[0m
+[0;32mI (5786) mqtt5_client: MQTT_MSG_TYPE_PUBACK return code is 16[0m
+[0;32mI (5796) MQTT5_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=24446[0m
+[0;32mI (6926) mqtt5_client: MQTT_MSG_TYPE_SUBACK return code is 0[0m
+[0;32mI (6926) MQTT5_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=36804[0m
+[0;32mI (6926) MQTT5_EXAMPLE: sent publish successful, msg_id=0[0m

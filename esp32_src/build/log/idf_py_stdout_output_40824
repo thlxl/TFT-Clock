@@ -1,0 +1,1443 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15576
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 13 2024 17:45:22[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=674e0h (423136) map[0m
+[0;32mI (259) esp_image: segment 1: paddr=00077508 vaddr=3ffb0000 size=0395ch ( 14684) load[0m
+[0;32mI (265) esp_image: segment 2: paddr=0007ae6c vaddr=40080000 size=051ach ( 20908) load[0m
+[0;32mI (274) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=a26f0h (665328) map[0m
+[0;32mI (515) esp_image: segment 4: paddr=00122718 vaddr=400851ac size=11cc8h ( 72904) load[0m
+[0;32mI (557) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (557) boot: Disabling RNG early entropy source...[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (569) cpu_start: Pro cpu up.[0m
+[0;32mI (569) cpu_start: Starting app cpu, entry point is 0x40081440[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (586) cpu_start: Pro cpu start user code[0m
+[0;32mI (587) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (587) cpu_start: Application information:[0m
+[0;32mI (591) cpu_start: Project name:     ShiZhong[0m
+[0;32mI (596) cpu_start: App version:      b7784e2-dirty[0m
+[0;32mI (602) cpu_start: Compile time:     Jun 13 2024 17:56:55[0m
+[0;32mI (608) cpu_start: ELF file SHA256:  a811daa90c5871b5...[0m
+[0;32mI (614) cpu_start: ESP-IDF:          v5.1-dirty[0m
+[0;32mI (619) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (624) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (629) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (634) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (641) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (647) heap_init: At 3FFB80F8 len 00027F08 (159 KiB): DRAM[0m
+[0;32mI (653) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (659) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (666) heap_init: At 40096E74 len 0000918C (36 KiB): IRAM[0m
+[0;32mI (673) spi_flash: detected chip: generic[0m
+[0;32mI (676) spi_flash: flash io: dio[0m
+[0;33mW (680) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (694) app_start: Starting scheduler on CPU0[0m
+[0;32mI (699) app_start: Starting scheduler on CPU1[0m
+[0;32mI (699) main_task: Started on CPU0[0m
+[0;32mI (709) main_task: Calling app_main()[0m
+[0;32mI (709) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (719) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (729) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (739) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (749) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (749) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (759) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (769) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (779) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (789) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (799) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3769) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3769) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3799) example_connect: Start example_connect.[0m
+I (3809) wifi:wifi driver task: 3ffbff9c, prio:23, stack:6656, core=0
+I (3809) wifi:wifi firmware version: b2f1f86
+I (3809) wifi:wifi certification version: v7.0
+I (3809) wifi:config NVS flash: enabled
+I (3809) wifi:config nano formating: disabled
+I (3819) wifi:Init data frame dynamic rx buffer num: 32
+I (3819) wifi:Init management frame dynamic rx buffer num: 32
+I (3829) wifi:Init management short buffer num: 32
+I (3829) wifi:Init dynamic tx buffer num: 32
+I (3839) wifi:Init static rx buffer size: 1600
+I (3839) wifi:Init static rx buffer num: 10
+I (3849) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3849) wifi_init: rx ba win: 6[0m
+[0;32mI (3849) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3859) wifi_init: udp mbox: 6[0m
+[0;32mI (3859) wifi_init: tcp mbox: 6[0m
+[0;32mI (3869) wifi_init: tcp tx win: 5744[0m
+[0;32mI (3869) wifi_init: tcp rx win: 5744[0m
+[0;32mI (3869) wifi_init: tcp mss: 1440[0m
+[0;32mI (3879) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3879) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3889) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (3999) wifi:mode : sta (a0:a3:b3:95:56:e0)
+I (3999) wifi:enable tsf
+[0;32mI (3999) example_connect: Connecting to TP-LINK_13A1...[0m
+[0;32mI (3999) example_connect: Waiting for IP(s)[0m
+[0;32mI (3999) example_common: Connected to example_netif_sta[0m
+[0;32mI (4009) example_common: - IPv4 address: 0.0.0.0,[0m
+[0;33mW (4019) mqtt5_client: Connect maximum_packet_size property is over buffer_size(1024), Please first change it[0m
+[0;32mI (4029) MQTT5_EXAMPLE: Other event id:7[0m
+[0;31mE (4029) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4039) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4039) mqtt_client: Error transport connect[0m
+[0;32mI (4049) MQTT5_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (4049) MQTT5_EXAMPLE: MQTT5 return code is 0[0m
+[0;31mE (4059) MQTT5_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (4059) MQTT5_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (4069) MQTT5_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4489) sntp_example: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (4489) sntp_example: Initializing and starting SNTP[0m
+[0;32mI (4489) sntp_example: List of configured NTP servers:[0m
+[0;32mI (4499) sntp_example: server 0: pool.ntp.org[0m
+[0;32mI (4509) sntp_example: server 1: time.nist.gov[0m
+[0;32mI (4509) sntp_example: server 2: europe.pool.ntp.org[0m
+[0;32mI (4519) sntp_example: server 3: 0.0.0.0[0m
+[0;32mI (4519) main_task: Returned from app_main()[0m
+[0;33mW (4579) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (4579) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+rgb24bit:0
+[0;33mW (5839) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (5839) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+I (6419) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+[0;32mI (6519) sntp_example: Waiting for system time to be set... (1/15)[0m
+rgb24bit:0
+rgb24bit:0
+I (7199) wifi:state: init -> auth (b0)
+I (7209) wifi:state: auth -> assoc (0)
+I (7219) wifi:state: assoc -> run (10)
+I (7239) wifi:connected with TP-LINK_13A1, aid = 4, channel 11, 40D, bssid = ec:60:73:04:13:a1
+I (7239) wifi:security: WPA2-PSK, phy: bgn, rssi: -51
+I (7249) wifi:pm start, type: 1
+
+[0;33mW (7269) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (7269) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+I (7309) wifi:<ba-add>idx:0 (ifx:0, ec:60:73:04:13:a1), tid:0, ssn:0, winSize:64
+I (7339) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+rgb24bit:0
+rgb24bit:0
+[0;32mI (8249) esp_netif_handlers: example_netif_sta ip: 192.168.1.110, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8249) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.110[0m
+[0;32mI (8519) sntp_example: Waiting for system time to be set... (2/15)[0m
+rgb24bit:0
+[0;33mW (8529) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (8529) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+rgb24bit:0
+[0;33mW (9789) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (9789) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+[0;32mI (10519) sntp_example: Waiting for system time to be set... (3/15)[0m
+rgb24bit:0
+rgb24bit:0
+[0;33mW (11059) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (11059) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+rgb24bit:0
+[0;33mW (12319) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (12319) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (12519) sntp_example: Waiting for system time to be set... (4/15)[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;33mW (13579) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (13579) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+rgb24bit:0
+[0;32mI (14079) MQTT5_EXAMPLE: Other event id:7[0m
+[0;32mI (14259) MQTT5_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14269) MQTT5_EXAMPLE: sent publish successful, msg_id=40670[0m
+[0;32mI (14269) MQTT5_EXAMPLE: sent subscribe successful, msg_id=59187[0m
+[0;32mI (14359) mqtt5_client: MQTT_MSG_TYPE_PUBACK return code is 0[0m
+[0;32mI (14359) MQTT5_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=40670[0m
+[0;32mI (14369) mqtt5_client: MQTT_MSG_TYPE_SUBACK return code is 1[0m
+[0;32mI (14369) MQTT5_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=59187[0m
+[0;32mI (14519) sntp_example: Waiting for system time to be set... (5/15)[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (16519) sntp_example: Waiting for system time to be set... (6/15)[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (18519) sntp_example: Waiting for system time to be set... (7/15)[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (20519) sntp_example: Waiting for system time to be set... (8/15)[0m
+rgb24bit:0
+rgb24bit:0
+[0;32mI (21069) sntp_example: Notification of a time synchronization event[0m
+[0;32mI (21069) sntp_example: The current date/time in Shanghai is: Thu Jul  4 11:23:39 2024[0m
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+rgb24bit:0
+[0;32mI (28959) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (28959) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (28959) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (28959) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (28969) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (28969) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (28979) MQTT5_EXAMPLE: DATA=4607[0m
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+rgb24bit:4607
+[0;32mI (42069) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (42069) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (42069) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (42069) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (42079) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (42079) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (42089) MQTT5_EXAMPLE: DATA=15615[0m
+rgb24bit:15615
+rgb24bit:15615
+rgb24bit:15615
+[0;32mI (43909) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (43909) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (43909) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (43919) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (43919) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (43929) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (43929) MQTT5_EXAMPLE: DATA=16639[0m
+[0;32mI (43949) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (43949) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (43949) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (43949) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (43959) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (43959) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (43969) MQTT5_EXAMPLE: DATA=18687[0m
+[0;32mI (43979) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (43979) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (43979) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (43989) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (43989) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (43999) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (43999) MQTT5_EXAMPLE: DATA=24063[0m
+[0;32mI (44009) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44009) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44019) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44019) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44029) MQTT5_EXAMPLE: content_type is [0m
+rgb24bit:24063
+[0;32mI (44029) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44039) MQTT5_EXAMPLE: DATA=25343[0m
+[0;32mI (44049) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44049) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44049) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44059) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44059) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44069) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44069) MQTT5_EXAMPLE: DATA=30719[0m
+[0;32mI (44079) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44079) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44089) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44089) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44099) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44099) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44099) MQTT5_EXAMPLE: DATA=35071[0m
+[0;32mI (44119) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44119) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44119) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44119) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44129) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44129) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44139) MQTT5_EXAMPLE: DATA=41727[0m
+[0;32mI (44149) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44149) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44149) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44159) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44159) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44169) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44169) MQTT5_EXAMPLE: DATA=46079[0m
+[0;32mI (44179) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44179) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44189) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44189) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44199) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44199) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44209) MQTT5_EXAMPLE: DATA=48127[0m
+[0;32mI (44219) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44219) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44219) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44229) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44229) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44239) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44239) MQTT5_EXAMPLE: DATA=52479[0m
+[0;32mI (44249) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44249) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44249) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44259) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44259) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44269) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44269) MQTT5_EXAMPLE: DATA=57855[0m
+[0;32mI (44279) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44279) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44289) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44289) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44299) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44299) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44309) MQTT5_EXAMPLE: DATA=63487[0m
+[0;32mI (44319) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44319) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44319) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44329) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44329) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44339) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44339) MQTT5_EXAMPLE: DATA=65531[0m
+[0;32mI (44349) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44349) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44359) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44359) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44369) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44369) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44369) MQTT5_EXAMPLE: DATA=65492[0m
+[0;32mI (44379) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44379) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44389) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44389) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44399) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44399) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44409) MQTT5_EXAMPLE: DATA=65459[0m
+[0;32mI (44419) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44419) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44419) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44429) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44429) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44439) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44439) MQTT5_EXAMPLE: DATA=65424[0m
+[0;32mI (44449) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44449) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44459) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44459) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44469) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44469) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44479) MQTT5_EXAMPLE: DATA=65395[0m
+[0;32mI (44479) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44479) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44489) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44489) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44499) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44499) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44509) MQTT5_EXAMPLE: DATA=65344[0m
+[0;32mI (44519) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44519) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44519) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44529) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44529) MQTT5_EXAMPLE: content_type is [0m
+rgb24bit:65344
+[0;32mI (44539) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44539) MQTT5_EXAMPLE: DATA=65318[0m
+[0;32mI (44549) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44549) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44559) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44559) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44569) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44569) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44579) MQTT5_EXAMPLE: DATA=65293[0m
+[0;32mI (44589) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44589) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44589) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44599) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44599) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44609) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44609) MQTT5_EXAMPLE: DATA=327424[0m
+[0;32mI (44619) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44619) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44629) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44629) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44639) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44639) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44649) MQTT5_EXAMPLE: DATA=917248[0m
+[0;32mI (44649) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44649) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44659) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44659) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44669) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44669) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44679) MQTT5_EXAMPLE: DATA=1769216[0m
+[0;32mI (44689) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44689) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44689) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44699) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44699) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44709) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44709) MQTT5_EXAMPLE: DATA=2293504[0m
+[0;32mI (44719) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44719) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44729) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44729) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44739) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44739) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44749) MQTT5_EXAMPLE: DATA=3145472[0m
+[0;32mI (44759) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44759) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44759) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44769) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44769) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44779) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44779) MQTT5_EXAMPLE: DATA=3669760[0m
+[0;32mI (44789) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44789) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44799) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44799) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44809) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44809) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44809) MQTT5_EXAMPLE: DATA=4521728[0m
+[0;32mI (44819) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44819) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44829) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44829) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44839) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44839) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44849) MQTT5_EXAMPLE: DATA=5373696[0m
+[0;32mI (44859) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44859) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44859) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44869) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44869) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44879) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44879) MQTT5_EXAMPLE: DATA=6749952[0m
+[0;32mI (44889) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44889) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44899) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44899) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44909) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44909) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44919) MQTT5_EXAMPLE: DATA=7864064[0m
+[0;32mI (44929) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44929) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44929) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44939) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44939) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44949) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44949) MQTT5_EXAMPLE: DATA=9240320[0m
+[0;32mI (44959) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44959) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44959) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44969) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (44969) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (44979) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (44979) MQTT5_EXAMPLE: DATA=11206400[0m
+[0;32mI (44989) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (44989) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (44999) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (44999) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45009) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45009) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45019) MQTT5_EXAMPLE: DATA=12058368[0m
+[0;32mI (45029) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45029) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45029) MQTT5_EXAMPLE: response_topic is [0m
+rgb24bit:7fffffff
+[0;32mI (45039) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45039) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45049) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45049) MQTT5_EXAMPLE: DATA=13172480[0m
+[0;32mI (45059) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45059) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45069) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45069) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45079) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45079) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45089) MQTT5_EXAMPLE: DATA=14286592[0m
+[0;32mI (45099) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45099) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45099) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45109) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45109) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45119) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45119) MQTT5_EXAMPLE: DATA=15138560[0m
+[0;32mI (45129) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45139) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45139) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45139) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45149) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45149) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45159) MQTT5_EXAMPLE: DATA=15924992[0m
+[0;32mI (45169) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45169) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45169) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45169) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45179) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45179) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45189) MQTT5_EXAMPLE: DATA=16776960[0m
+[0;32mI (45199) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45199) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45199) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45209) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45209) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45219) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45219) MQTT5_EXAMPLE: DATA=16774912[0m
+[0;32mI (45229) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45229) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45239) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45239) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45249) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45249) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45259) MQTT5_EXAMPLE: DATA=16769280[0m
+[0;32mI (45269) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45269) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45269) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45279) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45279) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45289) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45289) MQTT5_EXAMPLE: DATA=16767232[0m
+[0;32mI (45299) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45299) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45309) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45309) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45319) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45319) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45319) MQTT5_EXAMPLE: DATA=16763904[0m
+[0;32mI (45329) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45329) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45339) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45339) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45349) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45349) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45359) MQTT5_EXAMPLE: DATA=16758528[0m
+[0;32mI (45369) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45369) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45369) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45379) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45379) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45389) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45389) MQTT5_EXAMPLE: DATA=16754176[0m
+[0;32mI (45399) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45399) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45409) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45409) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45419) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45419) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45429) MQTT5_EXAMPLE: DATA=16750848[0m
+[0;32mI (45439) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45439) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45439) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45449) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45449) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45459) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45459) MQTT5_EXAMPLE: DATA=16747520[0m
+[0;32mI (45469) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45469) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45479) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45479) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45489) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45489) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45489) MQTT5_EXAMPLE: DATA=16743168[0m
+[0;32mI (45499) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (45499) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (45509) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (45509) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (45519) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (45519) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (45529) MQTT5_EXAMPLE: DATA=16742144[0m
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+[0;32mI (70709) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70719) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70719) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70719) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70719) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70729) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70729) MQTT5_EXAMPLE: DATA=16740096[0m
+[0;32mI (70739) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70739) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70749) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70749) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70759) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70759) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70769) MQTT5_EXAMPLE: DATA=16738816[0m
+[0;32mI (70779) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70779) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70779) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70789) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70789) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70799) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70799) MQTT5_EXAMPLE: DATA=16736768[0m
+[0;32mI (70809) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70809) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70819) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70819) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70829) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70829) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70839) MQTT5_EXAMPLE: DATA=16734464[0m
+[0;32mI (70849) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70849) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70849) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70859) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70859) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70859) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70869) MQTT5_EXAMPLE: DATA=16733440[0m
+[0;32mI (70879) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70879) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70879) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70889) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70889) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70899) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70899) MQTT5_EXAMPLE: DATA=16731392[0m
+[0;32mI (70909) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70909) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70919) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70919) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70929) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70929) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70939) MQTT5_EXAMPLE: DATA=16730112[0m
+[0;32mI (70949) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70949) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70949) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70959) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70959) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70969) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (70969) MQTT5_EXAMPLE: DATA=16729088[0m
+[0;32mI (70979) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (70979) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (70989) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (70989) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (70999) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (70999) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71009) MQTT5_EXAMPLE: DATA=16728064[0m
+[0;32mI (71009) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71019) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71019) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71019) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71029) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71039) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71039) MQTT5_EXAMPLE: DATA=16727040[0m
+rgb24bit:7fffffff
+[0;32mI (71049) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71049) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71059) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71059) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71069) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71069) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71069) MQTT5_EXAMPLE: DATA=16725760[0m
+[0;32mI (71079) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71079) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71089) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71089) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71099) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71099) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71109) MQTT5_EXAMPLE: DATA=16723712[0m
+[0;32mI (71119) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71119) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71119) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71129) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71129) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71139) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71139) MQTT5_EXAMPLE: DATA=16722688[0m
+[0;32mI (71149) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71149) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71159) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71159) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71169) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71169) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71179) MQTT5_EXAMPLE: DATA=16721408[0m
+[0;32mI (71189) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71189) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71189) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71199) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71199) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71209) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71209) MQTT5_EXAMPLE: DATA=16720384[0m
+[0;32mI (71219) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71219) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71229) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71229) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71229) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71239) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71239) MQTT5_EXAMPLE: DATA=16719360[0m
+[0;32mI (71249) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71249) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71259) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71259) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71269) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71269) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71279) MQTT5_EXAMPLE: DATA=16718336[0m
+[0;32mI (71289) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71289) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71289) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71299) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71299) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71309) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71309) MQTT5_EXAMPLE: DATA=16717056[0m
+[0;32mI (71319) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71319) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71329) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71329) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71339) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71339) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71349) MQTT5_EXAMPLE: DATA=16715008[0m
+[0;32mI (71359) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71359) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71359) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71369) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71369) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71379) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71379) MQTT5_EXAMPLE: DATA=16713984[0m
+[0;32mI (71389) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (71389) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (71389) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (71399) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (71399) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (71409) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (71409) MQTT5_EXAMPLE: DATA=16711680[0m
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+[0;32mI (72579) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72579) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72579) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72589) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72589) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72599) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72599) MQTT5_EXAMPLE: DATA=16712704[0m
+[0;32mI (72619) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72619) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72619) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72619) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72629) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72629) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72639) MQTT5_EXAMPLE: DATA=16717056[0m
+[0;32mI (72649) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72649) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72649) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72659) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72659) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72669) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72669) MQTT5_EXAMPLE: DATA=16725760[0m
+[0;32mI (72679) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72679) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72689) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72689) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72699) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72699) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72699) MQTT5_EXAMPLE: DATA=16733440[0m
+[0;32mI (72709) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72709) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72719) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72719) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72729) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72729) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72739) MQTT5_EXAMPLE: DATA=16742144[0m
+[0;32mI (72749) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72749) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72749) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72759) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72759) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72769) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72769) MQTT5_EXAMPLE: DATA=16755200[0m
+[0;32mI (72779) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72779) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72789) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72789) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72799) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72799) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72809) MQTT5_EXAMPLE: DATA=16771584[0m
+[0;32mI (72809) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72819) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72819) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72829) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72829) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72839) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72839) MQTT5_EXAMPLE: DATA=14024448[0m
+[0;32mI (72849) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72849) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72859) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72859) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72869) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72869) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72869) MQTT5_EXAMPLE: DATA=9830144[0m
+[0;32mI (72879) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72879) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72889) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72889) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72899) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72899) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72909) MQTT5_EXAMPLE: DATA=5046016[0m
+[0;32mI (72919) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72919) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72919) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72929) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72929) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72939) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72939) MQTT5_EXAMPLE: DATA=589568[0m
+[0;32mI (72949) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72949) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72959) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72959) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72969) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72969) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (72979) MQTT5_EXAMPLE: DATA=65335[0m
+[0;32mI (72989) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (72989) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (72989) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (72999) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (72999) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (72999) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73009) MQTT5_EXAMPLE: DATA=65399[0m
+[0;32mI (73019) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73019) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73019) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73029) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73029) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73039) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73039) MQTT5_EXAMPLE: DATA=65463[0m
+rgb24bit:7fffffff
+[0;32mI (73049) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73049) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73059) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73059) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73069) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73069) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73079) MQTT5_EXAMPLE: DATA=65522[0m
+[0;32mI (73089) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73089) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73089) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73099) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73099) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73109) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73109) MQTT5_EXAMPLE: DATA=54527[0m
+[0;32mI (73119) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73119) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73129) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73129) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73139) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73139) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73149) MQTT5_EXAMPLE: DATA=43775[0m
+[0;32mI (73149) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73149) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73159) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73169) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73169) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73169) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73179) MQTT5_EXAMPLE: DATA=31743[0m
+[0;32mI (73189) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73189) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73189) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73199) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73199) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73209) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73209) MQTT5_EXAMPLE: DATA=23039[0m
+[0;32mI (73219) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73219) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73229) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73229) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73239) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73239) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73249) MQTT5_EXAMPLE: DATA=16639[0m
+[0;32mI (73259) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73259) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73259) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73269) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73269) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73279) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73279) MQTT5_EXAMPLE: DATA=11263[0m
+[0;32mI (73289) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73289) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73299) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73299) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73299) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73309) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73309) MQTT5_EXAMPLE: DATA=8959[0m
+[0;32mI (73319) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73319) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73329) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73329) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73339) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73339) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73349) MQTT5_EXAMPLE: DATA=3583[0m
+[0;32mI (73359) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73359) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73359) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73369) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73369) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73379) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73379) MQTT5_EXAMPLE: DATA=255[0m
+[0;32mI (73389) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73389) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73399) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73399) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73409) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73409) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73409) MQTT5_EXAMPLE: DATA=262399[0m
+[0;32mI (73419) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73429) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73429) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73429) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73439) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73439) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73449) MQTT5_EXAMPLE: DATA=524543[0m
+[0;32mI (73459) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73459) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73459) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73469) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73469) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73479) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73479) MQTT5_EXAMPLE: DATA=1114367[0m
+[0;32mI (73499) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73499) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73499) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73499) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73509) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73509) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73519) MQTT5_EXAMPLE: DATA=1376511[0m
+[0;32mI (73529) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73529) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73529) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73539) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73539) MQTT5_EXAMPLE: content_type is [0m
+rgb24bit:7fffffff
+[0;32mI (73549) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73549) MQTT5_EXAMPLE: DATA=1638655[0m
+[0;32mI (73559) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73559) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73569) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73569) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73579) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73579) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73589) MQTT5_EXAMPLE: DATA=2228479[0m
+[0;32mI (73589) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73589) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73599) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73609) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73609) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73609) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73619) MQTT5_EXAMPLE: DATA=2752767[0m
+[0;32mI (73629) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73629) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73629) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73639) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73639) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73649) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73649) MQTT5_EXAMPLE: DATA=3080447[0m
+[0;32mI (73659) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73659) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73669) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73669) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73679) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73679) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73689) MQTT5_EXAMPLE: DATA=3604735[0m
+[0;32mI (73699) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73699) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73699) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73709) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73709) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73719) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73719) MQTT5_EXAMPLE: DATA=3866879[0m
+[0;32mI (73729) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73729) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73739) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73739) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73749) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73749) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73749) MQTT5_EXAMPLE: DATA=4194559[0m
+[0;32mI (73759) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73759) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73769) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73769) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73779) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73779) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73789) MQTT5_EXAMPLE: DATA=1376511[0m
+[0;32mI (73799) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (73799) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (73799) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (73809) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (73809) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (73819) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (73819) MQTT5_EXAMPLE: DATA=5631[0m
+rgb24bit:7fffffff
+[0;32mI (74219) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (74219) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (74219) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (74229) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (74229) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (74239) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (74239) MQTT5_EXAMPLE: DATA=3583[0m
+[0;32mI (74349) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (74349) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (74349) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (74349) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (74359) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (74359) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (74369) MQTT5_EXAMPLE: DATA=1966335[0m
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+[0;32mI (75549) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (75549) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (75549) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (75549) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (75559) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (75559) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (75569) MQTT5_EXAMPLE: DATA=3583[0m
+rgb24bit:7fffffff
+[0;32mI (76169) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (76169) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (76169) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (76169) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (76179) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (76179) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (76189) MQTT5_EXAMPLE: DATA=1966335[0m
+rgb24bit:7fffffff
+[0;32mI (76989) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (76989) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (76989) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (76989) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (76999) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (76999) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (77009) MQTT5_EXAMPLE: DATA=4194559[0m
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+[0;32mI (77799) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (77799) MQTT5_EXAMPLE: payload_format_indicator is 0[0m
+[0;32mI (77799) MQTT5_EXAMPLE: response_topic is [0m
+[0;32mI (77809) MQTT5_EXAMPLE: correlation_data is [0m
+[0;32mI (77809) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (77819) MQTT5_EXAMPLE: TOPIC=/LED/rgb[0m
+[0;32mI (77819) MQTT5_EXAMPLE: DATA=1376511[0m
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff
+rgb24bit:7fffffff

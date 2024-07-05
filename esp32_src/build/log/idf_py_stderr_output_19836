@@ -1,0 +1,204 @@
+[0;33m--- esp-idf-monitor 1.3.3 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008d067: uxListRemove at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:204
+[0m
+[0;33m0x4008d064: uxListRemove at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:198
+[0m
+[0;33m0x4008afa6: xTaskIncrementTick at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3268
+[0m
+[0;33m0x4008caaf: xPortSysTickHandler at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/port_systick.c:189
+[0m
+[0;33m0x4008c8f9: _frxt_timer_int at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:343
+[0m
+[0;33m0x40082e0e: _xt_lowint1 at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x40088923: xt_utils_wait_for_intr at /home/xl/esp/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /home/xl/esp/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x400d3cdf: esp_vApplicationIdleHook at /home/xl/esp/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4008ad25: prvIdleTask at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+[0m
+[0;33m0x4008c4a9: vPortTaskWrapper at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d382f: frame_to_panic_info at /home/xl/esp/esp-idf/components/esp_system/port/panic_handler.c:105
+[0m
+[0;33m0x4008882f: xt_utils_compare_and_set at /home/xl/esp/esp-idf/components/xtensa/include/xt_utils.h:215
+ (inlined by) esp_cpu_compare_and_set at /home/xl/esp/esp-idf/components/esp_hw_support/cpu.c:438
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081a96: panic_abort at /home/xl/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40089b51: esp_system_abort at /home/xl/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c7da: vApplicationStackOverflowHook at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+[0m
+[0;33m0x4008b19f: vTaskSwitchContext at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3728
+[0m
+[0;33m0x4008c928: _frxt_dispatch at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+[0m
+[0;33m0x4008c8da: _frxt_int_exit at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40081a96: panic_abort at /home/xl/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x40089b51: esp_system_abort at /home/xl/esp/esp-idf/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c7da: vApplicationStackOverflowHook at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+[0m
+[0;33m0x4008b19f: vTaskSwitchContext at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3728
+[0m
+[0;33m0x4008c928: _frxt_dispatch at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+[0m
+[0;33m0x4008c8da: _frxt_int_exit at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008d038: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4008d035: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4008ad02: prvAddCurrentTaskToDelayedList at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6458
+[0m
+[0;33m0x4008b9df: vTaskDelay at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1664
+[0m
+[0;33m0x400d8447: task_led at /home/xl/esp/01_huizhong/main/app_task.c:131 (discriminator 1)
+[0m
+[0;33m0x4008c4a9: vPortTaskWrapper at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008d038: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4008d035: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4008ad02: prvAddCurrentTaskToDelayedList at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6458
+[0m
+[0;33m0x4008b9df: vTaskDelay at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1664
+[0m
+[0;33m0x400d8447: task_led at /home/xl/esp/01_huizhong/main/app_task.c:131 (discriminator 1)
+[0m
+[0;33m0x4008c4a9: vPortTaskWrapper at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008d067: uxListRemove at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:204
+[0m
+[0;33m0x4008d064: uxListRemove at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:198
+[0m
+[0;33m0x4008afa6: xTaskIncrementTick at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3268
+[0m
+[0;33m0x4008caaf: xPortSysTickHandler at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/port_systick.c:189
+[0m
+[0;33m0x4008c8f9: _frxt_timer_int at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:343
+[0m
+[0;33m0x40082e0e: _xt_lowint1 at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1226
+[0m
+[0;33m0x40088923: xt_utils_wait_for_intr at /home/xl/esp/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /home/xl/esp/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x400d3cdf: esp_vApplicationIdleHook at /home/xl/esp/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4008ad25: prvIdleTask at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4327 (discriminator 1)
+[0m
+[0;33m0x4008c4a9: vPortTaskWrapper at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008d038: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4008d035: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4008ad02: prvAddCurrentTaskToDelayedList at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6458
+[0m
+[0;33m0x4008b9df: vTaskDelay at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1664
+[0m
+[0;33m0x400d8447: task_led at /home/xl/esp/01_huizhong/main/app_task.c:131 (discriminator 1)
+[0m
+[0;33m0x4008c4a9: vPortTaskWrapper at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008d038: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4008d035: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4008ad02: prvAddCurrentTaskToDelayedList at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6458
+[0m
+[0;33m0x4008b9df: vTaskDelay at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1664
+[0m
+[0;33m0x400d8447: task_led at /home/xl/esp/01_huizhong/main/app_task.c:131 (discriminator 1)
+[0m
+[0;33m0x4008c4a9: vPortTaskWrapper at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x4008d038: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4008d035: vListInsert at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c:171 (discriminator 1)
+[0m
+[0;33m0x4008ad02: prvAddCurrentTaskToDelayedList at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:6458
+[0m
+[0;33m0x4008b244: vTaskPlaceOnEventList at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3801
+[0m
+[0;33m0x4008a44b: xQueueReceive at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1563
+[0m
+[0;33m0x400f8b03: sys_arch_mbox_fetch at /home/xl/esp/esp-idf/components/lwip/port/freertos/sys_arch.c:317
+[0m
+[0;33m0x400e7640: tcpip_timeouts_mbox_fetch at /home/xl/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:104
+[0m
+[0;33m0x400e76fe: tcpip_thread at /home/xl/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:142
+[0m
+[0;33m0x4008c4a9: vPortTaskWrapper at /home/xl/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081440: call_start_cpu1 at /home/xl/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

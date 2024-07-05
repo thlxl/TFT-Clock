@@ -1,0 +1,262 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15576
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Jun 13 2024 17:45:22[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=67520h (423200) map[0m
+[0;32mI (259) esp_image: segment 1: paddr=00077548 vaddr=3ffb0000 size=0395ch ( 14684) load[0m
+[0;32mI (265) esp_image: segment 2: paddr=0007aeac vaddr=40080000 size=0516ch ( 20844) load[0m
+[0;32mI (274) esp_image: segment 3: paddr=00080020 vaddr=400d0020 size=a2710h (665360) map[0m
+[0;32mI (515) esp_image: segment 4: paddr=00122738 vaddr=4008516c size=11d08h ( 72968) load[0m
+[0;32mI (557) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (557) boot: Disabling RNG early entropy source...[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (569) cpu_start: Pro cpu up.[0m
+[0;32mI (569) cpu_start: Starting app cpu, entry point is 0x40081440[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (586) cpu_start: Pro cpu start user code[0m
+[0;32mI (587) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (587) cpu_start: Application information:[0m
+[0;32mI (591) cpu_start: Project name:     ShiZhong[0m
+[0;32mI (596) cpu_start: App version:      b7784e2-dirty[0m
+[0;32mI (602) cpu_start: Compile time:     Jun 13 2024 17:56:55[0m
+[0;32mI (608) cpu_start: ELF file SHA256:  c3515e9e1ccac8b4...[0m
+[0;32mI (614) cpu_start: ESP-IDF:          v5.1-dirty[0m
+[0;32mI (619) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (624) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (629) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (634) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (641) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (647) heap_init: At 3FFB80F8 len 00027F08 (159 KiB): DRAM[0m
+[0;32mI (653) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (659) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (666) heap_init: At 40096E74 len 0000918C (36 KiB): IRAM[0m
+[0;32mI (673) spi_flash: detected chip: generic[0m
+[0;32mI (676) spi_flash: flash io: dio[0m
+[0;33mW (680) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (694) app_start: Starting scheduler on CPU0[0m
+[0;32mI (699) app_start: Starting scheduler on CPU1[0m
+[0;32mI (699) main_task: Started on CPU0[0m
+[0;32mI (709) main_task: Calling app_main()[0m
+[0;32mI (709) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (719) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (729) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (739) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (749) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (749) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (759) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (769) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (779) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (789) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (799) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3769) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3769) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3799) example_connect: Start example_connect.[0m
+I (3809) wifi:wifi driver task: 3ffbff9c, prio:23, stack:6656, core=0
+I (3809) wifi:wifi firmware version: b2f1f86
+I (3809) wifi:wifi certification version: v7.0
+I (3809) wifi:config NVS flash: enabled
+I (3809) wifi:config nano formating: disabled
+I (3819) wifi:Init data frame dynamic rx buffer num: 32
+I (3819) wifi:Init management frame dynamic rx buffer num: 32
+I (3829) wifi:Init management short buffer num: 32
+I (3829) wifi:Init dynamic tx buffer num: 32
+I (3839) wifi:Init static rx buffer size: 1600
+I (3839) wifi:Init static rx buffer num: 10
+I (3849) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3849) wifi_init: rx ba win: 6[0m
+[0;32mI (3849) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3859) wifi_init: udp mbox: 6[0m
+[0;32mI (3859) wifi_init: tcp mbox: 6[0m
+[0;32mI (3869) wifi_init: tcp tx win: 5744[0m
+[0;32mI (3869) wifi_init: tcp rx win: 5744[0m
+[0;32mI (3869) wifi_init: tcp mss: 1440[0m
+[0;32mI (3879) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3879) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3889) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (3999) wifi:mode : sta (a0:a3:b3:95:56:e0)
+I (3999) wifi:enable tsf
+[0;32mI (3999) example_connect: Connecting to TP-LINK_13A1...[0m
+[0;32mI (3999) example_connect: Waiting for IP(s)[0m
+[0;32mI (4009) example_common: Connected to example_netif_sta[0m
+[0;32mI (4009) example_common: - IPv4 address: 0.0.0.0,[0m
+[0;33mW (4019) mqtt5_client: Connect maximum_packet_size property is over buffer_size(1024), Please first change it[0m
+[0;32mI (4029) MQTT5_EXAMPLE: Other event id:7[0m
+[0;31mE (4029) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (4039) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4039) mqtt_client: Error transport connect[0m
+[0;32mI (4049) MQTT5_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (4049) MQTT5_EXAMPLE: MQTT5 return code is 0[0m
+[0;31mE (4059) MQTT5_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (4059) MQTT5_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (4069) MQTT5_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (4729) sntp_example: Time is not set yet. Connecting to WiFi and getting time over NTP.[0m
+[0;32mI (4729) sntp_example: Initializing and starting SNTP[0m
+[0;32mI (4739) sntp_example: List of configured NTP servers:[0m
+[0;32mI (4739) sntp_example: server 0: pool.ntp.org[0m
+[0;32mI (4749) sntp_example: server 1: time.nist.gov[0m
+[0;32mI (4749) sntp_example: server 2: europe.pool.ntp.org[0m
+[0;32mI (4759) sntp_example: server 3: 0.0.0.0[0m
+温度:278.145266   湿度:418.936446
+[0;33mW (4819) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (4819) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (5219) main_task: Returned from app_main()[0m
+温度:278.572519   湿度:418.982223
+[0;33mW (6089) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (6089) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+I (6419) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+[0;32mI (6759) sntp_example: Waiting for system time to be set... (1/15)[0m
+I (7199) wifi:state: init -> auth (b0)
+I (7209) wifi:state: auth -> assoc (0)
+I (7219) wifi:state: assoc -> run (10)
+I (7239) wifi:connected with TP-LINK_13A1, aid = 4, channel 11, 40D, bssid = ec:60:73:04:13:a1
+I (7239) wifi:security: WPA2-PSK, phy: bgn, rssi: -59
+I (7239) wifi:pm start, type: 1
+
+I (7259) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+温度:278.572519   湿度:418.982223
+[0;33mW (7349) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (7349) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+I (7369) wifi:<ba-add>idx:0 (ifx:0, ec:60:73:04:13:a1), tid:0, ssn:0, winSize:64
+[0;32mI (8249) esp_netif_handlers: example_netif_sta ip: 192.168.1.112, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (8249) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.112[0m
+温度:278.145266   湿度:419.531548
+[0;33mW (8609) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (8609) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (8759) sntp_example: Waiting for system time to be set... (2/15)[0m
+温度:278.412299   湿度:419.562066
+[0;33mW (9879) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (9879) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (10759) sntp_example: Waiting for system time to be set... (3/15)[0m
+温度:278.011749   湿度:419.516289
+[0;33mW (11149) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (11149) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+温度:278.278782   湿度:419.989319
+[0;33mW (12419) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (12419) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (12759) sntp_example: Waiting for system time to be set... (4/15)[0m
+温度:278.145266   湿度:420.981155
+[0;33mW (13689) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (13689) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (14079) MQTT5_EXAMPLE: Other event id:7[0m
+[0;32mI (14309) MQTT5_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14309) MQTT5_EXAMPLE: sent publish successful, msg_id=40025[0m
+[0;32mI (14319) MQTT5_EXAMPLE: sent subscribe successful, msg_id=31545[0m
+[0;32mI (14339) mqtt5_client: MQTT_MSG_TYPE_PUBACK return code is 16[0m
+[0;32mI (14339) MQTT5_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=40025[0m
+[0;32mI (14369) mqtt5_client: MQTT_MSG_TYPE_SUBACK return code is 0[0m
+[0;32mI (14369) MQTT5_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=31545[0m
+[0;32mI (14379) MQTT5_EXAMPLE: sent publish successful, msg_id=0[0m
+[0;32mI (14419) MQTT5_EXAMPLE: MQTT_EVENT_DATA[0m
+[0;32mI (14419) MQTT5_EXAMPLE: key is board, value is esp32[0m
+[0;32mI (14419) MQTT5_EXAMPLE: key is u, value is user[0m
+[0;32mI (14419) MQTT5_EXAMPLE: key is p, value is password[0m
+[0;32mI (14429) MQTT5_EXAMPLE: payload_format_indicator is 1[0m
+[0;32mI (14429) MQTT5_EXAMPLE: response_topic is /topic/test/response[0m
+[0;32mI (14439) MQTT5_EXAMPLE: correlation_data is 123456[0m
+[0;32mI (14449) MQTT5_EXAMPLE: content_type is [0m
+[0;32mI (14449) MQTT5_EXAMPLE: TOPIC=/topic/qos0[0m
+[0;32mI (14459) MQTT5_EXAMPLE: DATA=data[0m
+[0;32mI (14759) sntp_example: Waiting for system time to be set... (5/15)[0m
+温度:278.011749   湿度:420.111391
+温度:278.145266   湿度:420.569162
+[0;32mI (16759) sntp_example: Waiting for system time to be set... (6/15)[0m
+温度:278.412299   湿度:419.989319
+[0;32mI (18759) sntp_example: Waiting for system time to be set... (7/15)[0m
+温度:278.011749   湿度:420.538643
+温度:277.557794   湿度:420.340276
+[0;32mI (20759) sntp_example: Waiting for system time to be set... (8/15)[0m
+温度:277.718013   湿度:420.065614
+[0;32mI (21599) sntp_example: Notification of a time synchronization event[0m
+[0;32mI (21599) sntp_example: The current date/time in Shanghai is: Mon Jul  1 17:37:46 2024[0m
+温度:278.145266   湿度:420.569162
+温度:278.145266   湿度:420.706493
+温度:278.011749   湿度:420.248722
+温度:278.145266   湿度:420.569162
+温度:278.011749   湿度:420.538643
+温度:278.011749   湿度:420.248722
+温度:278.011749   湿度:420.248722
+温度:278.011749   湿度:419.378958
+温度:278.278782   湿度:419.851987
+温度:278.145266   湿度:419.531548
+温度:278.145266   湿度:419.104295
+温度:277.557794   湿度:419.333181
+温度:277.557794   湿度:419.470512
+温度:277.878233   湿度:420.080873
+温度:278.145266   湿度:420.111391
+温度:277.878233   湿度:419.806210
+温度:277.878233   湿度:420.218204
+温度:278.011749   湿度:420.386053
+温度:277.718013   湿度:420.523384
+温度:277.557794   湿度:420.340276
+温度:277.878233   湿度:420.538643
+温度:278.145266   湿度:421.438926
+温度:278.145266   湿度:421.576257
+温度:278.572519   湿度:421.347372
+温度:278.412299   湿度:420.889601
+温度:278.145266   湿度:420.401312
+温度:278.412299   湿度:420.431830
+温度:278.412299   湿度:420.294499
+温度:278.145266   湿度:419.836728
+温度:278.145266   湿度:420.111391
+温度:278.145266   湿度:419.104295
+温度:277.878233   湿度:419.073777
+温度:278.011749   湿度:419.378958
+温度:278.011749   湿度:419.241627
+温度:277.424277   湿度:419.577325
+温度:278.011749   湿度:420.248722
+温度:278.011749   湿度:419.943542
+温度:277.718013   湿度:419.470512
+温度:277.878233   湿度:419.623102
+温度:277.718013   湿度:419.333181
+温度:278.011749   湿度:419.653620
+温度:277.878233   湿度:419.485771
+温度:277.878233   湿度:418.478676
+温度:277.878233   湿度:419.485771
+温度:277.878233   湿度:419.485771
+温度:277.718013   湿度:419.333181
+温度:277.557794   湿度:420.065614
+温度:276.997024   湿度:419.989319
+温度:277.557794   湿度:419.760433
+温度:277.130541   湿度:419.851987
+温度:277.557794   湿度:420.065614
+温度:277.424277   湿度:420.309758
+温度:277.424277   湿度:420.035096
+温度:277.424277   湿度:420.035096
+温度:277.424277   湿度:420.172427
+温度:277.424277   湿度:420.477607
+温度:277.424277   湿度:420.172427
+温度:277.424277   湿度:419.897765
+温度:277.424277   湿度:420.035096
+温度:277.424277   湿度:420.172427
+温度:277.424277   湿度:419.897765
+温度:277.130541   湿度:419.714656
+温度:276.997024   湿度:419.394217
+温度:277.424277   湿度:419.897765
+温度:277.424277   湿度:419.439994
+温度:277.290761   湿度:420.019837
+温度:277.130541   湿度:419.562066
+温度:277.424277   湿度:419.897765
+温度:276.997024   湿度:419.699397
