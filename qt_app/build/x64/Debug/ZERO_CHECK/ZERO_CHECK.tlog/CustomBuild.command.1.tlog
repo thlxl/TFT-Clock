@@ -1,0 +1,10 @@
+^E:\QT_DEMO\BUILD\CMAKEFILES\5397940D04426360BA8A48DBD6E8FB04\GENERATE.STAMP.RULE
+setlocal
+D:\Qt\qt\Tools\CMake_64\bin\cmake.exe -SE:/qt_demo/tft_clock -BE:/qt_demo/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/qt_demo/build/tft_clock.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

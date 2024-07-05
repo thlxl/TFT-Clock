@@ -1,0 +1,4 @@
+E:/qt_demo/build/CMakeFiles/tft_clock.dir
+E:/qt_demo/build/CMakeFiles/INSTALL.dir
+E:/qt_demo/build/CMakeFiles/ALL_BUILD.dir
+E:/qt_demo/build/CMakeFiles/ZERO_CHECK.dir

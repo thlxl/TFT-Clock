@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style.qss</file>
+        <file>image/hum.jpg</file>
+        <file>image/tem.jpg</file>
+        <file>image/turn_off.jpg</file>
+        <file>image/turn_on.jpg</file>
+        <file>image/background_1.jpg</file>
+        <file>image/background_2.webp</file>
+        <file>image/background_3.webp</file>
+        <file>image/background_4.jpg</file>
+        <file>image/background_5.bmp</file>
+        <file>image/hum1.jpg</file>
+        <file>image/tem1.jpg</file>
+    </qresource>
+</RCC>

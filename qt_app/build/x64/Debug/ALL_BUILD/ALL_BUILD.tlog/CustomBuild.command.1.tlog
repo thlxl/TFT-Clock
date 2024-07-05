@@ -1,0 +1,10 @@
+^E:\QT_DEMO\TFT_CLOCK\CMAKELISTS.TXT
+setlocal
+D:\Qt\qt\Tools\CMake_64\bin\cmake.exe -SE:/qt_demo/tft_clock -BE:/qt_demo/build --check-stamp-file E:/qt_demo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

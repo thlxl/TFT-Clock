@@ -1,0 +1,42 @@
+^E:\QT_DEMO\BUILD\CMAKEFILES\D47C5E1BC69A89113B3D903CFC13AAC2\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd E:\qt_demo\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\QT_DEMO\BUILD\CMAKEFILES\48888AAB3EFAF9EFDF60AC8964B2E5E3\QRC_RES.CPP.RULE
+setlocal
+cd E:\qt_demo\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc E:/qt_demo/build/CMakeFiles/tft_clock_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc E:/qt_demo/build/CMakeFiles/tft_clock_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc E:/qt_demo/build/CMakeFiles/tft_clock_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc E:/qt_demo/build/CMakeFiles/tft_clock_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\QT_DEMO\TFT_CLOCK\CMAKELISTS.TXT
+setlocal
+D:\Qt\qt\Tools\CMake_64\bin\cmake.exe -SE:/qt_demo/tft_clock -BE:/qt_demo/build --check-stamp-file E:/qt_demo/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
